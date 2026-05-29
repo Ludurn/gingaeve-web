@@ -5,7 +5,7 @@ import { useState } from "react";
 import Navbar from "./Navbar";
 import NavToggle from "./NavToggle";
 
-export default function LayoutShell({
+export default function GlassLayout({
   children,
 }: {
   children: React.ReactNode;
@@ -19,7 +19,7 @@ export default function LayoutShell({
         toggle={() => setIsOpen(!isOpen)}
       />
 
-      <div className="w-full max-w-2xl min-h-[500px] flex flex-col gap-5 mx-auto">
+      <div className="w-full max-w-[850px] min-h-[500px] flex flex-col gap-5 mx-auto">
         <Navbar isOpen={isOpen} />
         {children}
       </div>

@@ -1,7 +1,7 @@
 import "./globals.css";
 import { Ubuntu } from "next/font/google";
 
-import NavLayout from "./components/NavLayout";
+import GlassLayout from "./components/GlassLayout";
 
 const ubuntu = Ubuntu({
   subsets: ['latin'],
@@ -20,11 +20,11 @@ export default function RootLayout({
       className={`h-full antialiased ${ubuntu.variable}`}
     >
       <body className="min-h-full flex flex-col justify-center p-4 bg-blue-900 bg-[url('/cloudy.jpg')] bg-cover bg-center">
-        <NavLayout>
-          <div className="min-w-full min-h-[500px] flex items-center justify-center rounded-sm glass text-blue-800">
+        <GlassLayout>
+          <div className="w-full min-h-[500px] flex items-center justify-center rounded-sm glass text-blue-800">
             {children}
           </div>
-        </NavLayout>
+        </GlassLayout>
       </body>
     </html>
   );
