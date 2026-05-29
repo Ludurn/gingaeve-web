@@ -1,6 +1,13 @@
 import "./globals.css";
+import { Ubuntu } from "next/font/google";
 
 import NavLayout from "./components/NavLayout";
+
+const ubuntu = Ubuntu({
+  subsets: ['latin'],
+  weight: '400',
+  variable: '--font-ubuntu',
+})
 
 export default function RootLayout({
   children,
@@ -10,7 +17,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className="h-full antialiased"
+      className={`h-full antialiased ${ubuntu.variable}`}
     >
       <body className="min-h-full flex flex-col justify-center p-4 bg-blue-900 bg-[url('/cloudy.jpg')] bg-cover bg-center">
         <NavLayout>
