@@ -23,6 +23,7 @@
     "eslint": "^9",
     "eslint-config-next": "16.2.6",
     "flyonui": "^2.4.1",
+    "framer-motion": "^12.40.0",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
